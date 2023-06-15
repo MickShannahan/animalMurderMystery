@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="container-fluid bg-danger p-1">
+    <h3>🐅 Animal Murder Mystery 🔍</h3>
+  </header>
+
+  <main class="container">
+    <!-- lineup -->
+    <section class="row justify-content-center text-center fs-3 bg-dark rounded border border-danger mt-2 text-light">
+      <div class="col-12 ">Animals At Party</div>
+      <div class="col-8 text-center " id="lineup"></div>
+    </section>
+    <button class="btn btn-primary" onclick="moveAnimals()">pass time ⌚</button>
+    <button class="btn btn-primary" onclick="accuse()">Accuse! 👉💢</button>
+    <!-- Rooms -->
+    <section class="row g-1">
+      <div class="col-6 bg-success border border-3 border-dark rounded">
+        <h4>🥥Coconut lounge <button class="btn btn-dark ms-1" onclick="search('🥥')">search 🔍</button></h4>
+        <p id="🥥" class="fs-2"></p>
+      </div>
+      <div class="col-6 bg-success border border-3 border-dark rounded" onclick="search('🍖')">
+        <h4>🍖Carnivore Den<button class="btn btn-dark ms-1">search 🔍</button></h4>
+        <p id="🍖" class="fs-2"></p>
+      </div>
+      <div class="col-6 bg-success border border-3 border-dark rounded" onclick="search('🍹')">
+        <h4>🍹Watering Hole<button class="btn btn-dark ms-1">search 🔍</button></h4>
+        <p id="🍹" class="fs-2"></p>
+      </div>
+      <div class="col-6 bg-success border border-3 border-dark rounded" onclick="search('🌴')">
+        <h4>🌴Tree Top Cabana<button class="btn btn-dark ms-1">search 🔍</button></h4>
+        <p id="🌴" class="fs-2"></p>
+      </div>
+    </section>
+    <section class="row" id="messages"></section>
+  </main>
+  <main>
+
+  </main>
+  <footer>
+  </footer>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
